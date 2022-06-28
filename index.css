@@ -1,7 +1,10 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     background-image: url("img/table.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     font-family: "Exo 2", sans-serif;
     height: 100vh;
 }
@@ -53,7 +56,7 @@ div.top {
     align-self: flex-start;
 }
 
-div.top > p {
+div.top>p {
     margin: 0;
     margin-left: 10px;
 }

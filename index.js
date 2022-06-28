@@ -34,7 +34,7 @@ drawCardBtn.addEventListener("click", () => {
             `
             const winnerText = determineCardWinner(data.cards[0], data.cards[1])
             header.textContent = winnerText
-            
+
             if (data.remaining === 0) {
                 drawCardBtn.disabled = true
                 if (computerScore > myScore) {
@@ -59,11 +59,11 @@ drawCardBtn.addEventListener("click", () => {
  */
 
 function determineCardWinner(card1, card2) {
-    const valueOptions = ["2", "3", "4", "5", "6", "7", "8", "9", 
-    "10", "JACK", "QUEEN", "KING", "ACE"]
+    const valueOptions = ["2", "3", "4", "5", "6", "7", "8", "9",
+        "10", "JACK", "QUEEN", "KING", "ACE"]
     const card1ValueIndex = valueOptions.indexOf(card1.value)
     const card2ValueIndex = valueOptions.indexOf(card2.value)
-    
+
     if (card1ValueIndex > card2ValueIndex) {
         computerScore++
         computerScoreEl.textContent = `Computer score: ${computerScore}`
