@@ -6,6 +6,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     font-family: "Exo 2", sans-serif;
+    font-size: 16px;
     height: 100vh;
 }
 
@@ -25,24 +26,24 @@ button {
 
 button#new-deck {
     align-self: flex-start;
-    padding: 5px;
+    padding: 1em;
 }
 
 button.draw {
     font-size: 1.2em;
-    padding: 5px;
+    padding: 1em;
     align-self: stretch;
 }
 
 div.card-slot {
     border: 1px solid black;
-    border-radius: 5px;
-    height: 120px;
-    width: calc(120px * 5 / 7);
+    border-radius: 0.3125em;
+    height: 17em;
+    width: calc(17em * 5 / 7);
 }
 
 div.card-slot:nth-of-type(1) {
-    margin-bottom: 10px;
+    margin-bottom: 0.625em;
 }
 
 img.card {
@@ -58,7 +59,7 @@ div.top {
 
 div.top>p {
     margin: 0;
-    margin-left: 10px;
+    margin-left: 0.625em;
 }
 
 button:disabled {
@@ -66,5 +67,5 @@ button:disabled {
 }
 
 h2 {
-    margin: 10px;
+    margin: 0.625em;
 }
