@@ -20,13 +20,18 @@ body {
 
 button {
     background-color: #FFF100;
+    border: none;
+}
+
+button:hover, button:focus {
+    background-color: #fff;
     cursor: pointer;
     border: none;
 }
 
 button#new-deck {
     align-self: flex-start;
-    padding: 1em;
+    padding: 1em 3em;
 }
 
 button.draw {
@@ -36,7 +41,7 @@ button.draw {
 }
 
 div.card-slot {
-    border: 1px solid black;
+    border: 0.0625em solid black;
     border-radius: 0.3125em;
     height: 17em;
     width: calc(17em * 5 / 7);
@@ -68,4 +73,9 @@ button:disabled {
 
 h2 {
     margin: 0.625em;
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 1.5rem;
 }
